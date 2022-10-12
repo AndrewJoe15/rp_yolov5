@@ -5,7 +5,11 @@ from shutil import copyfile, rmtree
 from utils.general import Path
 
 # 分类
-names = ["OK", "NG"]
+names = ["Bolt"]
+
+# 数据集文件夹
+# dataset_base_dir = "Ampoule/"
+dataset_base_dir = "Solder/"
 
 # 训练集划分比例，剩下的为验证集
 TRAIN_RATIO = 80
@@ -49,12 +53,11 @@ def check_dir(file_dir):
         rmtree(file_dir)
     os.mkdir(file_dir)
 
-
 # 数据集路径
 data_base_dir = "../datasets/"
 # data_base_dir = Path(yaml['path'])
 # 项目数据集路径
-work_sapce_dir = os.path.join(data_base_dir, "Ampoule/")
+work_sapce_dir = os.path.join(data_base_dir, dataset_base_dir)
 annotation_dir = os.path.join(work_sapce_dir, "Annotations/")
 image_dir = os.path.join(work_sapce_dir, "Images/")
 yolo_labels_dir = os.path.join(work_sapce_dir, "Labels/")
