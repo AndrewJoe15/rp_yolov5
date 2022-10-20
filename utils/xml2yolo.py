@@ -5,11 +5,12 @@ from shutil import copyfile, rmtree
 from utils.general import Path
 
 # 分类
-names = ["Bolt"]
+names = ["OK", "NG"]
 
 # 数据集文件夹
 # dataset_base_dir = "Ampoule/"
-dataset_base_dir = "Solder/"
+# dataset_base_dir = "Solder/"
+dataset_base_dir = "Festo/"
 
 # 训练集划分比例，剩下的为验证集
 TRAIN_RATIO = 80
