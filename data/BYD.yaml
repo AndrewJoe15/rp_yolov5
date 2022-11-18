@@ -7,5 +7,6 @@ test: # images/test # test images (optional)
 
 # Classes
 names:
-  0: OK
-  1: NG
+  0: 磕碰
+  1: 划痕
+
